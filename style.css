@@ -5,10 +5,9 @@ html {
 }
 
 .parent-container {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  display: grid;
+  justify-content: center; /* Centers horizontally */
+  align-content: center; /* Centers vertically */
   gap: 1rem; /* 1rem gap between textarea and symbol-part */
   height: 80vh; /* Full height to center vertically */
 }
@@ -64,20 +63,14 @@ button:last-child {
   color: #ffffff;
   background: #d13f30;
 }
+
 h3 {
-  position: relative;
   color: white;
-  top: 43px;
-  right: 81px;
-  display: inline;
+  top: 34px;
+  position: relative;
   font-family: "Inter", sans-serif;
   font-size: 28px;
   font-weight: 800;
   text-align: left;
+  display: inline;
 }
-
-/* @media (min-width: 2560px) ,(max-height:1774){
-.parent-container{
-  transform: scale(2);
-}
-} */
